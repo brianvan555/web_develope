@@ -2,7 +2,7 @@
 ini_set('display_errors', 'off');
 session_start();
 require_once("connMysqlObj.php");
-date_default_timezone_set('Asia/Taipei');//設定台北時區
+date_default_timezone_set('Asia/Taipei');//set timezone
 $time=date("Y-m-d H:i:s");
 //check login or not then redirect to corrrespond page
 if(isset($_SESSION["loginMember"]) && ($_SESSION["loginMember"]!="")){
@@ -92,8 +92,8 @@ body{ font-size: 18px;}
   <nav class="navbar" role="navigation">
     <div class="container-fluid"> 
       <div class="navbar-header">
-        <a class="navbar" href="../index.php">
-        <img src="../img/logo.png" width="250">
+        <a class="navbar" href="index_path">
+        <img src="img_path" width="250">
       </a>  
       </div>
     </div>
