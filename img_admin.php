@@ -56,11 +56,8 @@
 			}
 			td.tit{
 				font-size: 5px;
-				/*禁止td換行*/
 				white-space: nowrap;
-				/*隱藏X,Y滾動條*/
 				overflow: hidden;
-				/*將顯示不完的以...顯示*/
 				text-overflow: ellipsis;
 			}
 		</style>
@@ -69,12 +66,12 @@
 	<script>
 		$(document).ready(function(){
 			$("#CheckAll").click(function(){
-				//如果全選按鈕有被選擇的話（被選擇是true）
+				//selectall is true
 				if($("#CheckAll").prop("checked")){
-					//把所有的核取方框的property都變成勾選
+					//all checked square's property be true
 					$("input[name='rtxts[]']").prop("checked",true);
 				}else{
-					//把所有的核取方框的property都取消勾選
+					//all checked square's property be false
 					$("input[name='rtxts[]']").prop("checked",false);
 				}
 			})
