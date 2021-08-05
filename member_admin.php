@@ -2,7 +2,7 @@
 //ini_set('display_errors', 'off');
 session_start();
 //require_once("connMysqlObj.php");
-date_default_timezone_set('Asia/Taipei');//設定台北時區
+date_default_timezone_set('Asia/Taipei');//set timezone
 //check login
 /*if(!isset($_SESSION["loginMember"]) || ($_SESSION["loginMember"]=="")){
 header("Location: index.php");
